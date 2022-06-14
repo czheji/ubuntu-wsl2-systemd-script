@@ -55,6 +55,9 @@ sudo apt-get update && sudo apt-get install -yqq daemonize dbus-user-session fon
 
 sudo cp "$self_dir/start-systemd-namespace" /usr/sbin/start-systemd-namespace
 sudo cp "$self_dir/enter-systemd-namespace" /usr/sbin/enter-systemd-namespace
+sudo cp "$self_dir/wslg-xwayland.socket" /usr/lib/systemd/system/wslg-xwayland.socket
+sudo cp "$self_dir/wslg-xwayland.service" /usr/lib/systemd/system/wslg-xwayland.service
+sudo ln -s /lib/systemd/system/wslg-xwayland.socket /etc/systemd/system/sockets.target.wants/wslg-xwayland.socket
 sudo chmod +x /usr/sbin/enter-systemd-namespace
 
 sudo tee /etc/sudoers.d/systemd-namespace >/dev/null <<EOF
