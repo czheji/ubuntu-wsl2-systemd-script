@@ -5,6 +5,8 @@ I am not responsible for broken installations, fights with your roommates and po
 
 Instructions from [the snapcraft forum](https://forum.snapcraft.io/t/running-snaps-on-wsl2-insiders-only-for-now/13033) turned into a script. Thanks to [Daniel](https://forum.snapcraft.io/u/daniel) on the Snapcraft forum! 
 
+
+
 ## Usage
 You need ```git``` to be installed for the commands below to work. Use
 ```sh
